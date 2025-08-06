@@ -2,7 +2,7 @@
   "name": "gyanpod-role-based",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://gyanpod.vercel.app/",
+  "homepage": "https://gyanpod.vercel.app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -20,7 +20,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "vercel --prod",
+    "deploy:preview": "vercel",
+    "clean": "rm -rf build node_modules/.cache",
+    "fresh-deploy": "npm run clean && npm install && npm run build && vercel --prod"
   },
   "eslintConfig": {
     "extends": [
@@ -42,8 +45,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
-    "gh-pages": "^4.0.0",
     "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "vercel": "^37.15.0"
   }
 }
