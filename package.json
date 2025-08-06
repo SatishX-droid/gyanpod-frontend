@@ -18,18 +18,18 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "vercel --prod",
-    "deploy:preview": "vercel",
-    "clean": "rm -rf build node_modules/.cache",
-    "fresh-deploy": "npm run clean && npm install && npm run build && vercel --prod"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "no-undef": "warn",
+      "no-unused-vars": "warn",
+      "react-hooks/exhaustive-deps": "warn"
+    }
   },
   "browserslist": {
     "production": [
@@ -46,7 +46,6 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17",
-    "vercel": "^37.15.0"
+    "tailwindcss": "^3.4.17"
   }
 }
