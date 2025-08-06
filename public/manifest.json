@@ -22,12 +22,12 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://gyanpod.vercel.app",
   "display": "standalone",
   "theme_color": "#2626af",
   "background_color": "#ffffff",
   "orientation": "portrait-primary",
-  "scope": "/",
+  "scope": "https://gyanpod.vercel.app",
   "lang": "en-US",
   "categories": ["education", "productivity", "utilities"],
   "shortcuts": [
