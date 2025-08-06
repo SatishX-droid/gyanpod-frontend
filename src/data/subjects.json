@@ -1,0 +1,39 @@
+{
+  "subjects": [
+    {
+      "id": "mathematics",
+      "name": "Mathematics",
+      "icon": "📐",
+      "color": "blue",
+      "classes": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "icon": "🔬",
+      "color": "green",
+      "classes": ["6", "7", "8", "9", "10"]
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "icon": "⚡",
+      "color": "yellow",
+      "classes": ["11", "12"]
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "icon": "⚗️",
+      "color": "red",
+      "classes": ["11", "12"]
+    },
+    {
+      "id": "biology",
+      "name": "Biology",
+      "icon": "🧬",
+      "color": "green",
+      "classes": ["11", "12"]
+    }
+  ]
+}

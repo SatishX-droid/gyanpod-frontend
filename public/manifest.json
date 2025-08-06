@@ -1,0 +1,71 @@
+{
+  "short_name": "GyanPod",
+  "name": "GyanPod - Smart Learning Platform",
+  "description": "Smart Padhai. Pocket Mein Gyan. Complete educational platform for students, teachers and parents.",
+  "version": "2.0.0",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2626af",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["education", "productivity", "utilities"],
+  "shortcuts": [
+    {
+      "name": "Quick Quiz",
+      "short_name": "Quiz",
+      "description": "Start a quick quiz session",
+      "url": "/?quiz=true",
+      "icons": [{ "src": "/favicon.ico", "sizes": "192x192" }]
+    },
+    {
+      "name": "Study Notes",
+      "short_name": "Notes",
+      "description": "Access study notes",
+      "url": "/?notes=true",
+      "icons": [{ "src": "/favicon.ico", "sizes": "192x192" }]
+    },
+    {
+      "name": "Doubt Solver",
+      "short_name": "Doubts",
+      "description": "Get help with doubts",
+      "url": "/?doubts=true",
+      "icons": [{ "src": "/favicon.ico", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot1.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot2.png", 
+      "type": "image/png",
+      "sizes": "750x1334",
+      "form_factor": "narrow"
+    }
+  ],
+  "prefer_related_applications": false
+}

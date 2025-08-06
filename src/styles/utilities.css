@@ -1,0 +1,319 @@
+/* Custom utility classes */
+
+/* Spacing utilities */
+.space-y-0\.5 > :not([hidden]) ~ :not([hidden]) {
+  margin-top: 0.125rem;
+}
+
+.space-x-0\.5 > :not([hidden]) ~ :not([hidden]) {
+  margin-left: 0.125rem;
+}
+
+/* Aspect ratio utilities */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-photo {
+  aspect-ratio: 4 / 3;
+}
+
+/* Safe area utilities for mobile */
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.safe-left {
+  padding-left: env(safe-area-inset-left);
+}
+
+.safe-right {
+  padding-right: env(safe-area-inset-right);
+}
+
+/* Backdrop utilities */
+.backdrop-blur-xs {
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+/* Text utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+/* Selection utilities */
+.select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.select-text {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+
+.select-all {
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  user-select: all;
+}
+
+/* Scroll utilities */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+.scroll-auto {
+  scroll-behavior: auto;
+}
+
+.overscroll-contain {
+  overscroll-behavior: contain;
+}
+
+.overscroll-none {
+  overscroll-behavior: none;
+}
+
+/* Touch utilities */
+.touch-pan-x {
+  touch-action: pan-x;
+}
+
+.touch-pan-y {
+  touch-action: pan-y;
+}
+
+.touch-manipulation {
+  touch-action: manipulation;
+}
+
+/* Contain utilities */
+.contain-layout {
+  contain: layout;
+}
+
+.contain-style {
+  contain: style;
+}
+
+.contain-paint {
+  contain: paint;
+}
+
+.contain-size {
+  contain: size;
+}
+
+.contain-strict {
+  contain: strict;
+}
+
+/* Will-change utilities */
+.will-change-auto {
+  will-change: auto;
+}
+
+.will-change-scroll {
+  will-change: scroll-position;
+}
+
+.will-change-contents {
+  will-change: contents;
+}
+
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Content visibility utilities */
+.content-visibility-auto {
+  content-visibility: auto;
+}
+
+.content-visibility-hidden {
+  content-visibility: hidden;
+}
+
+.content-visibility-visible {
+  content-visibility: visible;
+}
+
+/* Container query utilities */
+@container (min-width: 320px) {
+  .cq-sm\:block {
+    display: block;
+  }
+}
+
+@container (min-width: 768px) {
+  .cq-md\:flex {
+    display: flex;
+  }
+}
+
+/* Color scheme utilities */
+@media (prefers-color-scheme: dark) {
+  .dark\:invert {
+    filter: invert(1);
+  }
+}
+
+/* High contrast utilities */
+@media (prefers-contrast: high) {
+  .contrast-high\:border-2 {
+    border-width: 2px;
+  }
+  
+  .contrast-high\:font-bold {
+    font-weight: 700;
+  }
+}
+
+/* Reduced motion utilities */
+@media (prefers-reduced-motion: reduce) {
+  .motion-reduce\:animate-none {
+    animation: none;
+  }
+  
+  .motion-reduce\:transition-none {
+    transition: none;
+  }
+}
+
+/* Print utilities */
+@media print {
+  .print\:hidden {
+    display: none;
+  }
+  
+  .print\:block {
+    display: block;
+  }
+  
+  .print\:text-black {
+    color: black;
+  }
+  
+  .print\:bg-white {
+    background-color: white;
+  }
+}
+
+/* Focus utilities */
+.focus-visible\:ring-2:focus-visible {
+  ring-width: 2px;
+}
+
+.focus-visible\:ring-primary:focus-visible {
+  ring-color: #2626af;
+}
+
+/* Pointer utilities */
+.pointer-coarse {
+  cursor: pointer;
+}
+
+@media (pointer: coarse) {
+  .pointer-coarse\:p-4 {
+    padding: 1rem;
+  }
+}
+
+@media (pointer: fine) {
+  .pointer-fine\:p-2 {
+    padding: 0.5rem;
+  }
+}
+
+/* Hover utilities for touch devices */
+@media (hover: hover) {
+  .hover-hover\:hover\:bg-gray-100:hover {
+    background-color: #f3f4f6;
+  }
+}
+
+@media (hover: none) {
+  .hover-none\:active\:bg-gray-100:active {
+    background-color: #f3f4f6;
+  }
+}
+
+/* Screen size specific utilities */
+@media screen and (max-height: 600px) {
+  .short-screen\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* Orientation utilities */
+@media (orientation: portrait) {
+  .portrait\:flex-col {
+    flex-direction: column;
+  }
+}
+
+@media (orientation: landscape) {
+  .landscape\:flex-row {
+    flex-direction: row;
+  }
+}
+
+/* Custom properties for theming */
+:root {
+  --color-primary: 38 38 175;
+  --color-accent: 15 226 211;
+  --color-success: 34 211 166;
+  
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+}
+
+/* Dark mode custom properties */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: 17 24 39;
+    --color-text: 243 244 246;
+  }
+}
+
+/* Utility for CSS custom properties */
+.text-custom {
+  color: rgb(var(--color-text) / 1);
+}
+
+.bg-custom {
+  background-color: rgb(var(--color-bg) / 1);
+}
+
+.border-custom {
+  border-color: rgb(var(--color-primary) / 0.2);
+}

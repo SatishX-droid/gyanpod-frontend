@@ -1,0 +1,52 @@
+{
+  "app": {
+    "name": "GyanPod",
+    "version": "2.0.0",
+    "description": "Smart Padhai. Pocket Mein Gyan.",
+    "author": "GyanPod Team",
+    "website": "https://gyanpod.app",
+    "support": "support@gyanpod.app"
+  },
+  "features": {
+    "offlineMode": true,
+    "darkMode": true,
+    "multiLanguage": false,
+    "pushNotifications": true,
+    "socialSharing": true,
+    "voiceNotes": false,
+    "aiTutor": true
+  },
+  "limits": {
+    "maxFileSize": 10485760,
+    "maxNotesPerUser": 1000,
+    "maxQuizzesPerDay": 50,
+    "sessionTimeout": 3600000
+  },
+  "api": {
+    "baseUrl": "https://api.gyanpod.app",
+    "timeout": 30000,
+    "retryAttempts": 3
+  },
+  "analytics": {
+    "enabled": true,
+    "trackingId": "GA-XXXXXXXX",
+    "events": {
+      "studySession": true,
+      "quizCompletion": true,
+      "contentView": true,
+      "appInstall": true
+    }
+  },
+  "ui": {
+    "theme": {
+      "primaryColor": "#2626af",
+      "accentColor": "#0fe2d3",
+      "successColor": "#22d3a6"
+    },
+    "animations": {
+      "enabled": true,
+      "duration": 300,
+      "easing": "ease-in-out"
+    }
+  }
+}

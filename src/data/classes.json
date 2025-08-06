@@ -1,0 +1,34 @@
+{
+  "classes": [
+    {
+      "id": "1",
+      "name": "Class 1",
+      "description": "Foundation level",
+      "subjects": ["mathematics", "english", "hindi", "science", "social-science"],
+      "ageGroup": "6-7 years"
+    },
+    {
+      "id": "2",
+      "name": "Class 2",
+      "description": "Elementary level",
+      "subjects": ["mathematics", "english", "hindi", "science", "social-science"],
+      "ageGroup": "7-8 years"
+    },
+    {
+      "id": "10",
+      "name": "Class 10",
+      "description": "Board examination year",
+      "subjects": ["mathematics", "science", "english", "hindi", "social-science"],
+      "ageGroup": "15-16 years",
+      "isBoard": true
+    },
+    {
+      "id": "12",
+      "name": "Class 12",
+      "description": "Higher secondary board examination",
+      "subjects": ["mathematics", "physics", "chemistry", "biology", "english", "hindi"],
+      "ageGroup": "17-18 years",
+      "isBoard": true
+    }
+  ]
+}

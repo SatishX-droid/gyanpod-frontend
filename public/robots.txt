@@ -1,0 +1,16 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Block admin routes
+Disallow: /admin/
+Disallow: /api/
+
+# Allow educational content
+Allow: /notes/
+Allow: /quiz/
+Allow: /papers/
+Allow: /videos/

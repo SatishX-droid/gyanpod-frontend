@@ -1,0 +1,22 @@
+[
+  {
+    "id": "sci_10_01",
+    "topic": "Light - Reflection and Refraction", 
+    "chapter": 10,
+    "notes": "Light is a form of energy that enables us to see. When light falls on a surface, it can be reflected, absorbed, or transmitted. Laws of reflection: 1) The incident ray, reflected ray, and normal all lie in the same plane. 2) The angle of incidence equals the angle of reflection.",
+    "mcqs": [
+      {
+        "q": "The angle of incidence is equal to:",
+        "options": ["Angle of refraction", "Angle of reflection", "90 degrees", "0 degrees"],
+        "answer": "Angle of reflection",
+        "explanation": "According to the second law of reflection, angle of incidence = angle of reflection"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/O4Y8tgT9p4A",
+    "paper": "#",
+    "difficulty": "easy",
+    "estimatedTime": 40,
+    "prerequisites": ["Basic optics concepts"],
+    "objectives": ["Understand reflection laws", "Apply reflection in mirrors", "Distinguish reflection and refraction"]
+  }
+]

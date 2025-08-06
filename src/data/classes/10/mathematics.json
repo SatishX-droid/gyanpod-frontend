@@ -1,0 +1,48 @@
+[
+  {
+    "id": "math_10_01",
+    "topic": "Real Numbers",
+    "chapter": 1,
+    "notes": "Real numbers include all rational and irrational numbers. The fundamental theorem of arithmetic states that every composite number can be expressed as a product of primes, and this factorization is unique, apart from the order in which the prime factors occur.",
+    "mcqs": [
+      {
+        "q": "The HCF of 12 and 18 is:",
+        "options": ["2", "3", "6", "9"],
+        "answer": "6",
+        "explanation": "Using Euclid's division algorithm: 18 = 12 × 1 + 6, 12 = 6 × 2 + 0. Therefore, HCF(12,18) = 6"
+      },
+      {
+        "q": "√2 is a/an:",
+        "options": ["Rational number", "Irrational number", "Integer", "Natural number"],
+        "answer": "Irrational number",
+        "explanation": "√2 cannot be expressed as p/q where p and q are integers and q ≠ 0"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/X3kWxGxCKDE",
+    "paper": "#",
+    "difficulty": "medium",
+    "estimatedTime": 45,
+    "prerequisites": ["Basic arithmetic", "Prime numbers"],
+    "objectives": ["Understand rational and irrational numbers", "Apply Euclid's division algorithm"]
+  },
+  {
+    "id": "math_10_02", 
+    "topic": "Polynomials",
+    "chapter": 2,
+    "notes": "A polynomial p(x) in one variable x is an algebraic expression of the form p(x) = anxn + an-1xn-1 + ... + a1x + a0, where an ≠ 0. The highest power of x is called the degree of the polynomial.",
+    "mcqs": [
+      {
+        "q": "The degree of polynomial 3x² + 2x + 1 is:",
+        "options": ["1", "2", "3", "0"],
+        "answer": "2",
+        "explanation": "The highest power of x is 2, so the degree is 2"
+      }
+    ],
+    "video": "https://www.youtube.com/embed/1wYC3zAhJ8Y",
+    "paper": "#",
+    "difficulty": "medium",
+    "estimatedTime": 50,
+    "prerequisites": ["Algebraic expressions", "Exponents"],
+    "objectives": ["Identify polynomials", "Find degree of polynomials", "Perform polynomial operations"]
+  }
+]
