@@ -2,7 +2,7 @@
   "name": "gyanpod-role-based",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://yourusername.github.io/gyanpod",
+  "homepage": "https://gyanpod.vercel.app/gyanpod",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
